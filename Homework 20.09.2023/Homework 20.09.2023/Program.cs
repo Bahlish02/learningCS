@@ -12,7 +12,7 @@ public class HelloWorld
             while ((Num % 3 == 0) && (Num != 1))
             {
                 Num = Num / 3;
-                //Console.WriteLine(Num);
+                Console.WriteLine(Num);
                 CounterOfDegree += 1;
             }
             if (Num % 3 == 1 && Math.Pow(3, CounterOfDegree) == SecNum)
@@ -30,3 +30,21 @@ public class HelloWorld
         }
     }
 }
+
+
+//Другой вариант решения
+//int num = Convert.ToInt32(Console.ReadLine());
+//for (int i = 0; i < num; i++)
+//{
+//    double degree = Math.Pow(3, i);
+//    if (degree > num)
+//    {
+//        Console.WriteLine("Нет.");
+//        break;
+//    }
+//    else if (num == degree)
+//    {
+//        Console.WriteLine("Да."); 
+//        break;
+//    }
+//}
